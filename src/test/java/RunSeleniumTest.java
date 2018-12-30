@@ -25,7 +25,7 @@ public class RunSeleniumTest {
     }
 
     @Test
-    public void testGoogle() throws InterruptedException {
+    public void testYandexMarket() throws InterruptedException {
         Actions actions = new Actions(webDriver);
         webDriver.get("https://www.yandex.ru/");
         webDriver.findElement(By.linkText("Маркет")).click();
