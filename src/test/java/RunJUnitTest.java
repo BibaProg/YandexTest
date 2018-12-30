@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class RunTest {
+public class RunJUnitTest {
     @Before
     public void doBefore(){
         System.out.println("До теста");
