@@ -1,0 +1,47 @@
+Тест:
+1.	Перейдите на сайт https://www.ebay.com/
+    - Открыть хром в режиме инкогнито
+    - перейти на страницу https://www.ebay.com/ (mainPage)
+
+2.	Кликните на ссылку «Зарегистрируйтесь»
+    - нажать кнопку зарегистрироваться (registrationPage) <a href="https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fwww.ebay.com%2F" _sp="m570.l2621">зарегистрируйтесь</a>
+3.	В форме регистрации заполните все поля корректными данными
+    - заполнить поле Имя (registrationPage)  <input maxlength="63" type="text" name="firstname" value="" id="firstname" size="32" class="fld wide wide fld regular-text bold-text float-box" v="1" t="1" a="1" aria-autocomplete="none" aria-required="true" data-state="error" aria-invalid="true" aria-describedby="firstname_w">
+    - заполнить поле Фамилия (registrationPage) <input maxlength="63" type="text" name="lastname" value="" id="lastname" size="32" class="fld wide wide fld regular-text bold-text float-box" v="1" t="1" a="1" aria-autocomplete="none" aria-required="true" data-state="error" aria-invalid="true" aria-describedby="lastname_w">
+    - заполнить поле Адресс электронной почты (registrationPage) <input maxlength="64" type="text" name="email" value="" id="email" size="32" class=" wide fld regular-text bold-text float-box" v="1" t="1" a="1" oncopy="return false" aria-required="true" data-state="error" aria-invalid="false" aria-describedby="">
+    - заполнить поле Пароль (registrationPage) <input maxlength="64" type="password" name="PASSWORD" value="" id="PASSWORD" size="32" class="re-w3 wide  wide fld regular-text bold-text float-box" aria-describedby="PASSWORD_tips" v="1" t="1" a="1" aria-autocomplete="none" oncopy="return false" autocomplete="off" aria-required="true" data-required-rules="3" data-state="inactive" style="padding-right: 104px;">
+4.	Нажмите кнопку «Зарегистрироваться»
+    - Нажать кнопку Создать учетную запись (mainPage) <button id="ppaFormSbtBtn" type="submit" class="btn btn--primary">Создать учетную запись</button>
+    - Выйти из под учетной записи
+        -Направить курсор на свой никнейм <button id="gh-ug" class="gh-ua gh-control" aria-expanded="false" aria-controls="gh-eb-u-o" role="button">Здравствуйте, <b>Anton</b>!<b class="gh-eb-arw gh-sprRetina"></b></button>
+        -Нажать кнопку выход <a href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&amp;lgout=1" _sp="m570.l2622">Выход</a>
+
+                        ( при проверке письмо не приходило на почту)(переделано маил.ру, письмо для потдверждения приходит при повторной попытке регистрации(переписать сценарий))
+5.	Перейдите в почтовый ящик, на который было отправлено письмо с подтверждением
+    -Перейти на страницу https://www.gmail.com/ (mainPage)
+    -Нажать кнопку войти (loginPage) <a class="gmail-nav__nav-link gmail-nav__nav-link__sign-in" ng-click="navCtrl.trackNavClick('Navigation', 'sign in')" data-g-label="Sign in" href="https://accounts.google.com/AccountChooser?service=mail&amp;continue=https://mail.google.com/mail/" rel="nofollow" tabindex="1">Войти</a>
+    -Ввести аддресс электронной почты() <input type="email" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="username" spellcheck="false" tabindex="0" aria-label="Телефон или адрес эл. почты" name="identifier" autocapitalize="none" id="identifierId" dir="ltr" data-initial-dir="ltr" data-initial-value="">
+    -Нажать кнопку Далее или интер () <span class="RveJvd snByac">Далее</span>
+    -Ввести пароль () <input type="password" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="current-password" spellcheck="false" tabindex="0" aria-label="Введите пароль" name="password" autocapitalize="off" autocorrect="off" dir="ltr" data-initial-dir="ltr" data-initial-value badinput="false">
+    -Нажать кнопку далее(mailPage) <span class="RveJvd snByac">Далее</span>
+6.	Проверьте, что письмо действительно является актуальным
+7.	Перейдите по ссылке из письма для активации учетной записи
+8.	Активируйте учетную запись
+
+
+9.	Войдите в кабинет под своей учетной записью
+    - перейти на страницу https://www.ebay.com/
+    - нажать кнопку войти (loginPage) <a href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&amp;ru=https%3A%2F%2Fwww.ebay.com%2F" _sp="m570.l1524">Войдите</a>
+    - Ввести емеил (loginPage) <input class="textbox__control textbox__control--underline" id="userid" name="userid" type="text" value="" maxlength="64" autocomplete="" browserautofilled="false" data-marko="{&quot;onkeyup&quot;:&quot;handleKeyUp s0-14-5-24&quot;,&quot;onchange&quot;:&quot;handleChange s0-14-5-24&quot;,&quot;onkeypress&quot;:&quot;handleKeyPress s0-14-5-24&quot;}">
+    - Ввести пароль (loginPage) <input class="textbox__control textbox__control--underline" id="pass" name="pass" type="password" value="" maxlength="64" autocomplete="" browserautofilled="false" data-marko="{&quot;onkeyup&quot;:&quot;handleKeyUp s0-14-5-25-1&quot;,&quot;onchange&quot;:&quot;handleChange s0-14-5-25-1&quot;,&quot;onkeypress&quot;:&quot;handleKeyPress s0-14-5-25-1&quot;}">
+    - Нажать кнопку вход в систему (mainPage) <button id="sgnBt" class="btn btn--primary btn--large btn--fluid" type="submit" data-marko="{&quot;onclick&quot;:&quot;handleSubmitClick s0-14-5&quot;}">Вход в систему</button>
+10.	Перейдите на главную страницу сервиса
+11.	Выполните поиск по товарам «blackberry»
+    -Ввести запрос в поле для ввода(mainPage) <input type="text" class="gh-tb ui-autocomplete-input" size="50" maxlength="300" placeholder="Найдите любые товары" id="gh-ac" name="_nkw" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" aria-haspopup="true" role="combobox" aria-owns="ui-id-1">
+    -Нажать кнопку найти (searchResultPage) <input type="submit" class="btn btn-prim gh-spr" id="gh-btn" value="Найти">
+12.	Проверьте, что на странице отображается 50 товаров
+    -Подсчитать количество результатов на странице //*[@id="ListViewInner"] class="sresult lvresult clearfix li shic"
+13.	Выйдите из под своей учетной записи
+    -выход описан выше
+14.	Проверьте, что вы успешно вышли из под учетной записи.
+    -Проверить если ли кнопки войти и зарегистрироваться
