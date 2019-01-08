@@ -12,6 +12,7 @@
         <junit.version>4.12</junit.version>
         <cucumber.version>1.2.5</cucumber.version>
         <selenium.version>3.141.59</selenium.version>
+        <appium.version>6.1.0</appium.version>
     </properties>
 
     <dependencies>
@@ -34,6 +35,11 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>6.1.0</version>
         </dependency>
     </dependencies>
 
